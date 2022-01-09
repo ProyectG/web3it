@@ -19,7 +19,7 @@ Al bajar el proyecto seguir las siguientes instrucciones. (rama master, esta es 
 ##### Opcion 2:
 
 - instalar las dependencias. **npm install**
-- Construir el proyecto. ** ng build --output-hashing=all**
+- Construir el proyecto. **ng build --output-hashing=all**
 - Mover los archivos a un servidor web de su conveniencia.
 
 ##### Opcion 3:
