@@ -1,0 +1,48 @@
+table{
+    width: 100%;
+   }
+   
+   .mat-column-correo {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 28% !important;
+     width: 28% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+   
+     word-break: break-word;
+   
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   .mat-column-categoria {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 25% !important;
+     width: 25% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+   
+     word-break: break-word;
+   
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   th.mat-header-cell,
+   td.mat-cell,
+   td.mat-footer-cell {
+      border-bottom-width: 0 px;
+   }
+
+
+   tr.mat-footer-row {
+    border: 1 px solid #e7e7e7;
+    font-weight: bold;
+    height: 1px !important;
+ }

@@ -1,0 +1,51 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center"> <a class="navbar-brand" href="#">
+            <i class="fa d-inline fa-lg fa-circle-o"></i>
+            <b> ANGULAR 3IT</b>
+        </a> </div>
+</nav>
+<div class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="p-5 col-md-7 d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col-md-12"><img class="img-fluid d-block rounded-circle mx-auto" width="150px" height="150px" src="../../assets/reportes-300x300.png" ></div>
+                  </div>
+                <h3 class="display-4 mb-3">3IT Estadisticas</h3>
+                <p class="mb-4 lead">Con el objetivo de ver que tipo de musica al equipo 3IT te invitamos a participar
+                    de esta sencilla pregunta.&nbsp;<br></p>
+            </div>
+            <div class="p-5 col-5">
+                <h3 class="mb-3 text-center">¡CUENTANOS QUE TIPO DE MUSICA TE GUSTA!</h3>
+                <form autocomplete="off" [formGroup]="formulario" (submit)="enviarMensaje()">
+                    <div class="col-12">
+                        <mat-form-field class="col-12" floatLabel="never" appearance="outline">
+                            <mat-label>e-mail</mat-label>
+                            <input matInput type="email" id="email" formControlName="email" placeholder="">
+                            <mat-error>El correo ingresado no es correcto</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <br><br>
+                    <div class="col-12">
+                    <label id="radio-group-label">¿Que tipo de musica te gusta mas?</label>
+                    <br><br>
+                    <mat-radio-group  formControlName="check">
+                        <mat-radio-button *ngFor="let tipo of tipoMusical" [value]="tipo"> {{tipo}} </mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                    <button type="submit" class="btn mt-4 btn-block btn-outline-dark p-2"><b>¡VAMOS A ELLO!</b></button>
+                </form>
+                <br>
+                <div class="alert alert-success" *ngIf="codigo =='00'" role="alert">
+                    {{ mensaje }}
+                </div>
+                <div class="alert alert-danger" *ngIf="codigo != '00' && codigo != '-1' && codigo != undefined" role="alert">
+                    {{ mensaje }}
+                </div>
+                <div class="alert alert-danger" *ngIf="codigo == '-1' " role="alert">
+                    Se debe completar tanto el correo como tu opcion para continuar.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
