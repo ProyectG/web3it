@@ -10,7 +10,7 @@ Prueba tecnica - Angular
 
 #### NodeJS
 
-Al bajar el proyecto seguir las siguientes instrucciones.
+Al bajar el proyecto seguir las siguientes instrucciones. (rama master, esta es rama MAIN (confusion))
 ##### Opcion 1:
 
 - instalar las dependencias. **npm install**
